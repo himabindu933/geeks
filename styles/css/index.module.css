@@ -1,3 +1,23 @@
-.title {
-  color: green;
+.body p {
+  font-size: 16px;
+}
+.body h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.body h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.body h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.body h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.body .inner_container {
+  width: 90%;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.module.css.map */

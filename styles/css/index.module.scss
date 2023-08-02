@@ -1,5 +1,68 @@
-$color-primay: green;
+// @import "../../src/app/components/footer.module.scss";
+$color-primay: #fff;
+$body-bg-color: #000;
+$desktop-breakpoint: 1024px;
+$tablet-breakpoint: 720px;
+$mobile-breakpoint: 540px;
+$h1-font: 40px;
+$h2-font: 30px;
+$h3-font: 25px;
+$h5-font: 20px;
+$p-font: 16px;
 
-.title {
-  color: $color-primay;
+@mixin res-desktop {
+  @media only screen and (min-width: ($desktop-breakpoint+1px)) {
+    @content;
+  }
+}
+@mixin res-tablet {
+  @media only screen and (max-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+@mixin res-smalltablet {
+  @media only screen and (max-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+@mixin res-mobile {
+  @media only screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+@mixin pwa {
+  // for PWA, if we make one in the future.
+  // displays content only in PWA app, and not in browsers (desktop and mobile)
+  @media all and (display-mode: standalone) {
+    @content;
+  }
+}
+
+.body {
+  //   background-color: $body-bg-color;
+  //   color: #fff;
+  p {
+    font-size: $p-font;
+  }
+  h1 {
+    font-size: $h1-font;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: $h2-font;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: $h3-font;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: $h5-font;
+    font-weight: bold;
+  }
+  .inner_container {
+    // border: 1px solid #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
 }

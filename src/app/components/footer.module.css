@@ -1,0 +1,102 @@
+.body p {
+  font-size: 16px;
+}
+.body h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.body h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.body h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.body h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.body .inner_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 50px 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+.footer .copyrights {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding-bottom: 20px;
+}
+.footer h2 {
+  color: skyblue;
+}
+.footer .ceo_name {
+  color: #ccc;
+  font-weight: bold;
+}
+.footer h3 {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.footer .address {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  text-align: center;
+}
+.footer .address .footer_btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px 0;
+}
+.footer .address .address_col {
+  width: 30%;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.footer h5 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.footer p {
+  margin-top: 15px;
+}
+.footer .icon {
+  font-size: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.footer .socila_icons {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+}
+.footer .socila_icons div {
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}/*# sourceMappingURL=footer.module.css.map */

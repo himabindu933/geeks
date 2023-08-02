@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "../../styles/css/index.module.css";
+@import "../app//components/footer.module.css";
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,3 +26,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select {
+  outline: 0;
+}
