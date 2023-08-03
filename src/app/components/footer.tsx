@@ -1,4 +1,4 @@
-"use Strict";
+"use client";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCopyright } from "react-icons/fa";
 import { BiMobileAlt } from "react-icons/bi";
@@ -14,7 +14,7 @@ export default function Footer() {
             "Teaching is our expertise. We'll take care of it, so you can focus
             on your feature."
           </h2>
-          <h3 className="text-center ceo_name">Syed Shakeer, CEO</h3>
+          {/* <h3 className="text-center ceo_name">Syed Shakeer, CEO</h3> */}
           <h3 className="mt-[60px]">THE GEEK HALL</h3>
 
           <div className="address">
