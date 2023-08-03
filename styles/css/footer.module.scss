@@ -47,6 +47,13 @@
       width: 30%;
       // border: 1px solid #fff;
       padding: 20px;
+      .adress_info {
+        display: flex;
+        // column-gap: 20px;
+        width: 75%;
+        margin: 10px auto;
+        border: 1px solid #fff;
+      }
     }
   }
   h5 {
@@ -68,7 +75,6 @@
     justify-content: center;
     div {
       cursor: pointer;
-      border: 2px solid #fff;
       border-radius: 30px;
       text-align: center;
       font-size: 30px;
@@ -79,13 +85,15 @@
 
 @include res-smalltablet {
   .address {
-    // display: grid !important;
     flex-wrap: wrap;
     margin: 20px 0;
     .address_col {
       width: 100% !important;
       padding: 20px;
       margin: 10px auto !important;
+      .adress_info {
+        width: 60% !important;
+      }
     }
   }
 }

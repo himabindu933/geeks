@@ -5,6 +5,8 @@
   background-color: $body-bg-color;
   color: $color-primay;
   font-size: $p-font;
+  margin-bottom: 20px;
+  width: 100%;
   .tabs {
     display: inline-flex;
     justify-content: center;
@@ -39,6 +41,25 @@
     }
     .active:hover::after {
       width: 100%;
+    }
+  }
+}
+
+@include res-smalltablet {
+  .course_tabs {
+    .tabs {
+      width: 95%;
+      column-gap: 20px !important;
+      flex-wrap: wrap !important;
+      button {
+        margin-bottom: 15px;
+      }
+      .active,
+      .inactive {
+        padding: 5px 10px;
+        // width: 150px;
+        height: 37px;
+      }
     }
   }
 }

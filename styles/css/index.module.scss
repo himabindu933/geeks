@@ -42,7 +42,7 @@ $p-font: 16px;
 // }
 
 .body {
-  background-color: #ccc;
+  background-color: #fff;
   //   color: #fff;
   p {
     font-size: $p-font;
@@ -67,10 +67,5 @@ $p-font: 16px;
     // border: 1px solid #fff;
     width: 90%;
     margin: 0 auto;
-  }
-  .container {
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid burlywood;
   }
 }

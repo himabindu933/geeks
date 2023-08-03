@@ -34,28 +34,30 @@ function Home() {
 
   return (
     <div className="course_tabs">
-      <div className="tabs">
-        {btn.map((item, index) => {
-          return (
-            <button
-              key={item.id}
-              onClick={hadleChangeTab}
-              value={index}
-              className={value === index ? "active" : "inactive"}
-            >
-              {item.name}
-            </button>
-          );
-        })}
-      </div>
-      <div className="tabpanel">
-        <div>
-          {arr.map((item, index) => {
-            if (value === index) {
-              console.log(value, "inval");
-              return <div key={item.id}>{item.name}</div>;
-            }
+      <div className="inner_container">
+        <div className="tabs">
+          {btn.map((item, index) => {
+            return (
+              <button
+                key={item.id}
+                onClick={hadleChangeTab}
+                value={index}
+                className={value === index ? "active" : "inactive"}
+              >
+                {item.name}
+              </button>
+            );
           })}
+        </div>
+        <div className="tabpanel">
+          <div>
+            {arr.map((item, index) => {
+              if (value === index) {
+                console.log(value, "inval");
+                return <div key={item.id}>{item.name}</div>;
+              }
+            })}
+          </div>
         </div>
       </div>
     </div>
