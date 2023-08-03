@@ -1,0 +1,44 @@
+@import "./index.module.scss";
+
+.course_tabs {
+  padding: 50px 0;
+  background-color: $body-bg-color;
+  color: $color-primay;
+  font-size: $p-font;
+  .tabs {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 30px;
+    button::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s;
+    }
+    button:hover::after {
+      width: 100%;
+    }
+    .active {
+      padding: 5px 50px;
+      background-color: #fff;
+      color: #000;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-size: $p-font;
+    }
+    .active::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width 0.3s;
+    }
+    .active:hover::after {
+      width: 100%;
+    }
+  }
+}

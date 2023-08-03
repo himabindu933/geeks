@@ -23,7 +23,7 @@ export default function Footer() {
               <div
                 style={{
                   display: "flex",
-                  width: "75%",
+                  width: "70%",
                   margin: "10px auto",
                 }}
               >
@@ -33,7 +33,7 @@ export default function Footer() {
               <div
                 style={{
                   display: "flex",
-                  width: "75%",
+                  width: "70%",
                   margin: "10px auto",
                 }}
               >
@@ -43,7 +43,7 @@ export default function Footer() {
               <div
                 style={{
                   display: "flex",
-                  width: "75%",
+                  width: "70%",
                   margin: "10px auto",
                 }}
               >

@@ -31,8 +31,8 @@
   .address {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    // flex-wrap: wrap;
+    // margin: 20px 0;
     text-align: center;
     .footer_btn {
       background-color: transparent;
@@ -43,11 +43,11 @@
       margin-top: 40px;
       padding: 15px 0;
     }
-  }
-  .address .address_col {
-    width: 30%;
-    border: 1px solid #fff;
-    padding: 20px;
+    .address_col {
+      width: 30%;
+      // border: 1px solid #fff;
+      padding: 20px;
+    }
   }
   h5 {
     font-weight: normal;
@@ -73,6 +73,19 @@
       text-align: center;
       font-size: 30px;
       padding: 10px;
+    }
+  }
+}
+
+@include res-smalltablet {
+  .address {
+    // display: grid !important;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    .address_col {
+      width: 100% !important;
+      padding: 20px;
+      margin: 10px auto !important;
     }
   }
 }
