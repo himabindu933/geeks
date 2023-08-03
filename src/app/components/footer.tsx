@@ -20,36 +20,15 @@ export default function Footer() {
           <div className="address">
             <div className="address_col">
               <h5>Reservations Office</h5>
-              <div
-                className="adress_info"
-                // style={{
-                //   display: "flex",
-                //   width: "70%",
-                //   margin: "10px auto",
-                // }}
-              >
+              <div className="adress_info">
                 <FaLocationDot className="icon" />
                 <p>Hyderabd, Telangana, India</p>
               </div>
-              <div
-                className="adress_info"
-                // style={{
-                //   display: "flex",
-                //   width: "70%",
-                //   margin: "10px auto",
-                // }}
-              >
+              <div className="adress_info">
                 <BiMobileAlt className="icon" />
                 <p>123-456-7890</p>
               </div>
-              <div
-                className="adress_info"
-                // style={{
-                //   display: "flex",
-                //   width: "70%",
-                //   margin: "10px auto",
-                // }}
-              >
+              <div className="adress_info">
                 <SlEnvolope className="icon" />
                 <p>example@gmail.com</p>
               </div>
