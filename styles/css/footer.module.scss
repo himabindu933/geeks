@@ -16,6 +16,7 @@
     display: flex;
     column-gap: 10px;
     padding-bottom: 20px;
+    border-top: 1px solid #fff;
   }
   h2 {
     color: skyblue;
@@ -31,9 +32,8 @@
   .address {
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
-    // margin: 20px 0;
     text-align: center;
+    padding-bottom: 30px;
     .footer_btn {
       background-color: transparent;
       border: 1px solid #fff;
@@ -57,7 +57,7 @@
   }
   h5 {
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   p {
     margin-top: 15px;
@@ -66,7 +66,7 @@
     font-size: 40px;
     // width: 10%;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .socila_icons {
     display: flex;
@@ -94,6 +94,11 @@
       .adress_info {
         width: 60% !important;
       }
+    }
+  }
+  .footer {
+    .icon {
+      margin-right: 5px;
     }
   }
 }

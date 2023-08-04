@@ -35,6 +35,8 @@ function Home() {
   return (
     <div className="course_tabs">
       <div className="inner_container">
+        <h2>Selection Of Courses</h2>
+        <div className="underline"></div>
         <div className="tabs">
           {btn.map((item, index) => {
             return (

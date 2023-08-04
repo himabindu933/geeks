@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
             <div className="address_col">
               <h5>Office Hours</h5>
-              <p className=" mt-[20px]">
+              <p style={{ marginBottom: 40 }}>
                 Monday to Friday <br />
                 9:00 am to 6:00 pm
               </p>
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
             <div className="address_col">
               <h5>Get Social</h5>
-              <div className="socila_icons  mt-[20px]">
+              <div className="socila_icons">
                 <div>
                   <BsFacebook />
                 </div>
