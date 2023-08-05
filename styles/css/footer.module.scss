@@ -1,6 +1,6 @@
 @import "./index.module.scss";
 .footer {
-  padding: 50px 0;
+  padding: 100px 0px 0px 0px;
   width: 100%;
   background-color: $body-bg-color;
   color: $color-primay;
@@ -16,6 +16,7 @@
     display: flex;
     column-gap: 10px;
     padding-bottom: 20px;
+    font-family: "Tektur";
     border-top: 1px solid #fff;
   }
   h2 {
@@ -33,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
     .footer_btn {
       background-color: transparent;
       border: 1px solid #fff;
@@ -46,7 +47,7 @@
     .address_col {
       width: 30%;
       // border: 1px solid #fff;
-      padding: 20px;
+      // padding: 20px;
       .adress_info {
         display: flex;
         // column-gap: 20px;
@@ -72,6 +73,7 @@
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    margin-top: 30px;
     div {
       cursor: pointer;
       border: 2px solid #fff;
@@ -84,21 +86,28 @@
 }
 
 @include res-smalltablet {
-  .address {
-    flex-wrap: wrap;
-    margin: 20px 0;
-    .address_col {
-      width: 100% !important;
-      padding: 20px;
-      margin: 10px auto !important;
-      .adress_info {
-        width: 60% !important;
+  .footer {
+    padding-top: 10px;
+    .address {
+      flex-wrap: wrap;
+      margin: 20px 0;
+      .address_col {
+        width: 100% !important;
+        padding: 20px;
+        margin: 10px auto !important;
+        .adress_info {
+          width: 60% !important;
+        }
+        .footer_btn {
+          margin-bottom: 30px;
+        }
       }
     }
-  }
-  .footer {
     .icon {
       margin-right: 5px;
+    }
+    .copyrights {
+      padding-bottom: 20px;
     }
   }
 }

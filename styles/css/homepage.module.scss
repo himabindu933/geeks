@@ -5,7 +5,8 @@
   background-color: $body-bg-color;
   color: $color-primay;
   font-size: $p-font;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #fff;
   width: 100%;
   .inner_container {
     h2 {

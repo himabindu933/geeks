@@ -10,16 +10,16 @@ export default function Footer() {
     <div>
       <div className="footer">
         <div className="inner_container">
-          <h2 className="text-center">
+          {/* <h2 className="text-center">
             "Teaching is our expertise. We'll take care of it, so you can focus
             on your feature."
-          </h2>
+          </h2> */}
           {/* <h3 className="text-center ceo_name">Syed Shakeer, CEO</h3> */}
-          <h3 className="mt-[60px]">THE GEEK HALL</h3>
+          {/* <h3 className="mt-[60px]">THE GEEK HALL</h3> */}
 
           <div className="address">
             <div className="address_col">
-              <h5>Reservations Office</h5>
+              {/* <h5>Reservations Office</h5> */}
               <div className="adress_info">
                 <FaLocationDot className="icon" />
                 <p>Hyderabd, Telangana, India</p>
@@ -34,7 +34,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="address_col">
-              <h5>Office Hours</h5>
+              {/* <h5>Office Hours</h5> */}
               <p style={{ marginBottom: 40 }}>
                 Monday to Friday <br />
                 9:00 am to 6:00 pm
@@ -47,7 +47,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="address_col">
-              <h5>Get Social</h5>
+              {/* <h5>Get Social</h5> */}
               <div className="socila_icons">
                 <div>
                   <BsFacebook />
