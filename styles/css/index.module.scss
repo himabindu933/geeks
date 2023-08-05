@@ -1,4 +1,9 @@
-// @import "../../src/app/components/footer.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 $color-primay: #fff;
 $body-bg-color: #000;
 $desktop-breakpoint: 1024px;
@@ -38,8 +43,14 @@ $p-font: 16px;
   }
 }
 
+// @include res-tablet{
+
+// }
+
 .body {
-  //   background-color: $body-bg-color;
+  background-color: $body-bg-color;
+  font-family: "Poppins";
+  letter-spacing: 1px;
   //   color: #fff;
   p {
     font-size: $p-font;
@@ -47,18 +58,27 @@ $p-font: 16px;
   h1 {
     font-size: $h1-font;
     font-weight: bold;
+    font-family: "Tektur";
+    letter-spacing: 3px;
   }
   h2 {
     font-size: $h2-font;
     font-weight: bold;
+    font-family: "Tektur";
+    letter-spacing: 3px;
+    letter-spacing: 3px;
   }
   h3 {
     font-size: $h3-font;
     font-weight: bold;
+    font-family: "Tektur";
+    letter-spacing: 3px;
   }
   h5 {
     font-size: $h5-font;
     font-weight: bold;
+    font-family: "Tektur";
+    letter-spacing: 3px;
   }
   .inner_container {
     // border: 1px solid #fff;

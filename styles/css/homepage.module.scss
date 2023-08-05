@@ -1,0 +1,84 @@
+@import "./index.module.scss";
+
+.course_tabs {
+  padding: 50px 0;
+  background-color: $body-bg-color;
+  color: $color-primay;
+  font-size: $p-font;
+  margin-bottom: 0px;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  .inner_container {
+    h2 {
+      text-align: center;
+    }
+    .underline {
+      width: 18%;
+      background-color: blueviolet;
+      height: 5px;
+      margin: 0px auto 50px auto;
+      border-radius: 10px;
+    }
+  }
+  .tabs {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 30px;
+    button {
+      width: 150px;
+    }
+    button::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s;
+    }
+    button:hover::after {
+      width: 100%;
+    }
+    .active {
+      padding: 5px 0px;
+      background-color: #fff;
+      color: #000;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-size: $p-font;
+    }
+    // .active::after {
+    //   content: "";
+    //   display: block;
+    //   width: 0;
+    //   height: 2px;
+    //   background: #000;
+    //   transition: width 0.3s;
+    // }
+    // .active:hover::after {
+    //   width: 100%;
+    // }
+  }
+}
+
+@include res-smalltablet {
+  .course_tabs {
+    .tabs {
+      width: 95%;
+      column-gap: 20px !important;
+      flex-wrap: wrap !important;
+      button {
+        margin-bottom: 15px;
+      }
+      .active,
+      .inactive {
+        padding: 5px 10px;
+        // width: 150px;
+        height: 37px;
+      }
+    }
+    .underline {
+      width: 67% !important;
+    }
+  }
+}
