@@ -1,14 +1,14 @@
 @import "./index.module.scss";
 .footer {
-  padding: 100px 0px 0px 0px;
+  padding: 50px 0px 0 0;
   width: 100%;
   background-color: $body-bg-color;
   color: $color-primay;
   .copyrights {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
     width: 100%;
     background-color: $body-bg-color;
     color: $color-primay;
@@ -33,26 +33,26 @@
   .address {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    // padding-bottom: 30px;
+    // text-align: center;
+    padding-bottom: 50px;
     .footer_btn {
       background-color: transparent;
       border: 1px solid #fff;
       border-radius: 30px;
-      width: 100%;
+      // width: ;
       text-align: center;
       margin-top: 40px;
-      padding: 15px 0;
+      padding: 15px 30px;
     }
     .address_col {
-      width: 30%;
+      // width: 30%;
       // border: 1px solid #fff;
       // padding: 20px;
       .adress_info {
         display: flex;
         // column-gap: 20px;
-        width: 75%;
-        margin: 10px auto;
+        // width: 75%;
+        margin: 10px 0;
       }
     }
   }
@@ -72,7 +72,7 @@
   .socila_icons {
     display: flex;
     column-gap: 30px;
-    justify-content: center;
+    // justify-content: center;
     margin-top: 30px;
     div {
       cursor: pointer;
