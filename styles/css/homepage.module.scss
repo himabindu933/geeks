@@ -1,12 +1,12 @@
 @import "./index.module.scss";
 
 .course_tabs {
-  padding: 50px 0;
+  padding: 90px 0;
   background-color: $body-bg-color;
   color: $color-primay;
   font-size: $p-font;
   margin-bottom: 0px;
-  border-bottom: 2px solid #fff;
+  // border-bottom: 2px solid #fff;
   width: 100%;
   .inner_container {
     h2 {
@@ -62,8 +62,8 @@
 }
 
 .comapanies {
-  border-bottom: 2px solid #fff;
-  padding: 70px 0;
+  // border-bottom: 2px solid #fff;
+  padding: 90px 0;
   .companies_flex {
     display: flex;
     justify-content: space-between;
@@ -98,8 +98,8 @@
 }
 
 .testimonials {
-  padding: 50px 0;
-  border-bottom: 1px solid #fff;
+  padding: 90px 0;
+  // border-bottom: 1px solid #fff;
   .underline {
     width: 23%;
     // background-color: blueviolet;

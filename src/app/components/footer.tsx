@@ -1,6 +1,5 @@
 "use client";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaRegCopyright } from "react-icons/fa";
 import { BiMobileAlt } from "react-icons/bi";
 import { SlEnvolope } from "react-icons/sl";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
@@ -62,10 +61,6 @@ export default function Footer() {
               <button className="footer_btn">Tag us in your photos</button>
             </div>
           </div>
-        </div>
-        <div className="copyrights">
-          <FaRegCopyright style={{ marginTop: 20 }} />{" "}
-          <p>Copyrights @Geeks 2023</p>
         </div>
       </div>
     </div>
