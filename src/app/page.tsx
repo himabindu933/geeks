@@ -22,6 +22,12 @@ import mentor4 from "./images/mentor4.jpg";
 import mentor5 from "./images/mentor5.jpg";
 import mentor6 from "./images/mentor6.jpg";
 import collaboration from "./images/collaboration1.jpeg";
+import img1 from "./images/frontrowseat.png";
+import img2 from "./images/exposure.png";
+import img3 from "./images/placements.png";
+import img4 from "./images/reports.png";
+import img5 from "./images/updates.png";
+import img6 from "./images/Communitybuilding.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -178,6 +184,40 @@ function Home() {
       slidesToScroll: 1,
     });
   });
+
+  const geeks: cards_flex[] = [
+    {
+      id: 0,
+      name: "Learn at your own place and time",
+      image: img1,
+    },
+    {
+      id: 1,
+      name: "Learn at your own place and time",
+      image: img2,
+    },
+    {
+      id: 2,
+      name: "Learn at your own place and time",
+      image: img3,
+    },
+    {
+      id: 3,
+      name: "Learn at your own place and time",
+      image: img4,
+    },
+    {
+      id: 4,
+      name: "Learn at your own place and time",
+      image: img5,
+    },
+    {
+      id: 5,
+      name: "Learn at your own place and time",
+      image: img6,
+    },
+  ];
+
   return (
     <>
       <div className="course_tabs">
@@ -255,39 +295,26 @@ function Home() {
           <div className="underline"></div>
 
           <div className="slideshow-container">
-            <div className="companies_flex">
-              <div className="companies_flex_left">
-                <div>
-                  <h3>Learn at your own place and time.</h3>
+            {geeks.map((item, index) => {
+              return (
+                <div className="companies_flex" key={index}>
+                  <div className="companies_flex_left">
+                    <div>
+                      <h3>{item.name}</h3>
+                    </div>
+                  </div>
+                  <div className="companies_flex_right">
+                    <ImgTag
+                      src={item.image}
+                      alt="image1"
+                      // width={100}
+                      // height={100}
+                      className="company_img"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="companies_flex_right">
-                <ImgTag
-                  src={Course}
-                  alt="image1"
-                  // width={100}
-                  // height={100}
-                  className="company_img"
-                />
-              </div>
-            </div>
-
-            <div className="companies_flex">
-              <div className="companies_flex_left">
-                <div>
-                  <h3>Learn at your own edrftgyujixrctvybnmk,.</h3>
-                </div>
-              </div>
-              <div className="companies_flex_right">
-                <ImgTag
-                  src={Course}
-                  alt="image1"
-                  // width={100}
-                  // height={100}
-                  className="company_img"
-                />
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
         <div className="inner_container cater">
@@ -326,69 +353,76 @@ function Home() {
         </div>
       </div>
 
-      <div className="inner_container geeks_for">
-        <div className="geeks_for_left">
-          <div className="inner_geeks_left">
-            <h2 className="mb-[20px]">WHAT IS GEEKS.IN FOR COMPANIES?</h2>
-            <p>
-              Loresm ipsum dolar Loresm ipsum dolar Loresm ipsum dolar Loresm
-              ipsum dolar Loresm ipsum dolar Loresm ipsum dolar Loresm ipsum
-              dolar Loresm ipsum dolar Loresm ipsum dolar Loresm ipsum
-              dolarLoresm ipsum dolar.
-            </p>
-            <div className="inner_companies_flex">
-              <div>
-                <BsFillTelephoneFill />
-              </div>
-              <div>
-                <HiUserGroup />
-              </div>
-              <div>
-                <GrLanguage />
-              </div>
-              <div>
-                <TbMessages />
-              </div>
-              <div>
-                <LuCalendarClock />
+      <div className="geeks_for_parent">
+        <div className="inner_container geeks_for">
+          <div className="geeks_for_left">
+            <div className="inner_geeks_left">
+              <h2 className="mb-[20px]">WHAT IS GEEKS.IN FOR COMPANIES?</h2>
+              <p>
+                Loresm ipsum dolar Loresm ipsum dolar Loresm ipsum dolar Loresm
+                ipsum dolar Loresm ipsum dolar Loresm ipsum dolar Loresm ipsum
+                dolar Loresm ipsum dolar Loresm ipsum dolar Loresm ipsum
+                dolarLoresm ipsum dolar.
+              </p>
+              <div className="inner_companies_flex">
+                <div>
+                  <BsFillTelephoneFill />
+                  {/* <ImgTag alt="img" src={img1} width={100} height={100} /> */}
+                </div>
+                <div>
+                  <HiUserGroup />
+                  {/* <ImgTag alt="img" src={img6} width={100} height={100} /> */}
+                </div>
+                <div>
+                  <GrLanguage />
+                  {/* <ImgTag alt="img" src={img4} width={100} height={100} /> */}
+                </div>
+                <div>
+                  <TbMessages />
+                  {/* <ImgTag alt="img" src={img3} width={100} height={100} /> */}
+                </div>
+                <div>
+                  <LuCalendarClock />
+                  {/* <ImgTag alt="img" src={img5} width={100} height={100} /> */}
+                </div>
               </div>
             </div>
           </div>
+
+          <div className="geeks_for_right">
+            <ImgTag
+              src={Course}
+              alt="image1"
+              // width={100}
+              // height={100}
+              className="company_img"
+            />
+          </div>
         </div>
 
-        <div className="geeks_for_right">
-          <ImgTag
-            src={Course}
-            alt="image1"
-            // width={100}
-            // height={100}
-            className="company_img"
-          />
-        </div>
-      </div>
-
-      <div className="collaborations_parent">
-        <h2 className="text-center">COLLABORATIONS</h2>
-        <div className="underline"></div>
-        <div className="inner_container collaborations">
-          <ImgTag
-            src={collaboration}
-            alt="company img"
-            width={150}
-            height={150}
-          />
-          <ImgTag
-            src={collaboration}
-            alt="company img"
-            width={150}
-            height={150}
-          />
-          <ImgTag
-            src={collaboration}
-            alt="company img"
-            width={150}
-            height={150}
-          />
+        <div className="collaborations_parent">
+          <h2 className="text-center">COLLABORATIONS</h2>
+          <div className="underline"></div>
+          <div className="inner_container collaborations">
+            <ImgTag
+              src={collaboration}
+              alt="company img"
+              width={150}
+              height={150}
+            />
+            <ImgTag
+              src={collaboration}
+              alt="company img"
+              width={150}
+              height={150}
+            />
+            <ImgTag
+              src={collaboration}
+              alt="company img"
+              width={150}
+              height={150}
+            />
+          </div>
         </div>
       </div>
 
@@ -414,8 +448,8 @@ function Home() {
         </div>
 
         <h2
-          className="text-center"
-          style={{ width: "80%", margin: "70px auto 0px auto" }}
+          className="text-center content"
+          style={{ width: "80%", margin: "50px auto 0px auto" }}
         >
           "Teaching is our expertise. We'll take care of it, so you can focus on
           your feature."
@@ -466,19 +500,19 @@ function Home() {
             </div>
           </div>
         </div> */}
+      </div>
 
-        <div className="team inner_conatiner">
-          <h2 className="text-center">Meet Our Team</h2>
-          <div className="underline"></div>
+      <div className="team inner_conatiner">
+        <h2 className="text-center">Meet Our Team</h2>
+        <div className="underline"></div>
 
-          <p className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            adipisci.
-          </p>
-          <p className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
+        <p className="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          adipisci.
+        </p>
+        <p className="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
       </div>
     </>
   );
