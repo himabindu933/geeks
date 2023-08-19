@@ -11,12 +11,14 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@types/jquery": "^3.5.16",
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "jquery": "^3.7.0",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -24,8 +26,13 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.2",
     "sass": "^1.64.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.6",
+    "swiper": "^10.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/slick-carousel": "^1.6.37"
   }
 }

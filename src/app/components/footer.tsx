@@ -3,6 +3,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BiMobileAlt } from "react-icons/bi";
 import { SlEnvolope } from "react-icons/sl";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
+import Imgtag from "next/image";
+import logo from "../images/geek_logo.png";
 
 export default function Footer() {
   return (
@@ -15,10 +17,10 @@ export default function Footer() {
           </h2> */}
           {/* <h3 className="text-center ceo_name">Syed Shakeer, CEO</h3> */}
           {/* <h3 className="mt-[60px]">THE GEEK HALL</h3> */}
-
+          <Imgtag alt="logo" src={logo} width={150} height={150} />
           <div className="address">
-            <div className="address_col">
-              {/* <h5>Reservations Office</h5> */}
+            {/* <div className="address_col">
+               <h5>Reservations Office</h5> 
               <div className="adress_info">
                 <FaLocationDot className="icon" />
                 <p>Hyderabd, Telangana, India</p>
@@ -33,7 +35,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="address_col">
-              {/* <h5>Office Hours</h5> */}
+               <h5>Office Hours</h5> 
               <p style={{ marginBottom: 40 }}>
                 Monday to Friday <br />
                 9:00 am to 6:00 pm
@@ -44,9 +46,25 @@ export default function Footer() {
                 <br />
                 9:00 am to 12 noon
               </p>
+            </div> */}
+            <div className="address_col">
+              <p>Company</p>
+              <p>About Us</p>
+              <p>Blogs</p>
+              <p>Newsrooms</p>
+              <p>Carrers</p>
+            </div>
+            <div className="address_col">
+              <p>Support</p>
+              <p>Contact Us</p>
+              <p>Privacy Policy</p>
+              <p>Terma & Conditions</p>
+              <p>Refund Policy</p>
+              <p>FAQ</p>
             </div>
             <div className="address_col">
               {/* <h5>Get Social</h5> */}
+              <p>Connect with us</p>
               <div className="socila_icons">
                 <div>
                   <BsFacebook />
@@ -59,6 +77,12 @@ export default function Footer() {
                 </div>
               </div>
               <button className="footer_btn">Tag us in your photos</button>
+            </div>
+            <div className="address_col sign_up">
+              <p>Ready to get started?</p>
+              <button>
+                Signup now <span>&#x3e;</span>
+              </button>
             </div>
           </div>
         </div>
