@@ -49,37 +49,35 @@ $p-font: 16px;
 
 .body {
   background-color: gray;
-  font-family: "Poppins";
-  letter-spacing: 1px;
   color: #fff;
   p {
     font-size: $p-font;
     font-weight: 300;
+    letter-spacing: 0.6px;
   }
   h1 {
     font-size: $h1-font;
     font-weight: bold;
-    font-family: "Tektur";
-    letter-spacing: 3px;
+    font-family: "Roboto";
+    letter-spacing: 0.3px;
   }
   h2 {
     font-size: $h2-font;
     font-weight: bold;
-    font-family: "Tektur";
-    letter-spacing: 3px;
-    letter-spacing: 3px;
+    font-family: "Roboto";
+    letter-spacing: 0.3px;
   }
   h3 {
     font-size: $h3-font;
     font-weight: bold;
-    font-family: "Tektur";
-    letter-spacing: 3px;
+    font-family: "Roboto";
+    letter-spacing: 0.3px;
   }
   h5 {
     font-size: $h5-font;
     font-weight: bold;
-    font-family: "Tektur";
-    letter-spacing: 3px;
+    font-family: "Roboto";
+    letter-spacing: 0.3px;
   }
   .inner_container {
     // border: 1px solid #fff;
