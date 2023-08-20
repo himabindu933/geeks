@@ -7,7 +7,7 @@ import test from "../images/test.png";
 import test2 from "../images/test2.png";
 import men1 from "../images/men1.jpg";
 import charecter from "../images/charecter.png";
-import { AiOutlineShoppingCart, AiFillPlusSquare } from "react-icons/ai";
+// import { AiOutlineShoppingCart, AiFillPlusSquare } from "react-icons/ai";
 import { IoSpeedometerOutline } from "react-icons/io5";
 import { BiSolidLock } from "react-icons/bi";
 import { BsFillPersonFill, BsInstagram } from "react-icons/bs";
@@ -102,7 +102,7 @@ function Course() {
                       borderRadius: 20,
                     }}
                   >
-                    Buy Now <AiOutlineShoppingCart style={{ fontSize: 20 }} />
+                    {/* Buy Now <AiOutlineShoppingCart style={{ fontSize: 20 }} /> */}
                   </button>
                 </div>
                 <div>
@@ -650,7 +650,7 @@ function Course() {
                     padding: "5px 10px",
                   }}
                 >
-                  <AiFillPlusSquare style={{ marginTop: 5, marginRight: 3 }} />{" "}
+                  {/* <AiFillPlusSquare style={{ marginTop: 5, marginRight: 3 }} />{" "} */}
                   Follow
                 </button>
                 <BsInstagram style={{ fontSize: 30, cursor: "pointer" }} />
