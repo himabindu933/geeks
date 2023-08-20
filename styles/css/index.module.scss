@@ -51,9 +51,10 @@ $p-font: 16px;
   background-color: $body-bg-color;
   font-family: "Poppins";
   letter-spacing: 1px;
-  //   color: #fff;
+  color: #fff;
   p {
     font-size: $p-font;
+    font-weight: 300;
   }
   h1 {
     font-size: $h1-font;
@@ -84,5 +85,13 @@ $p-font: 16px;
     // border: 1px solid #fff;
     width: 90%;
     margin: 0 auto;
+  }
+  .underline {
+    width: 18%;
+    // background-color: blueviolet;
+    background-color: orangered;
+    height: 5px;
+    margin: 0px auto 50px auto;
+    border-radius: 10px;
   }
 }

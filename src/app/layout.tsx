@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer";
+import Copyright from "./components/copyright";
 import Carousal from "./components/carousal/carousal";
 // import style from "../../styles/css/index.module.scss";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
         <div>{children}</div>
         <div>
           <Footer />
+          <Copyright />
         </div>
       </body>
     </html>
