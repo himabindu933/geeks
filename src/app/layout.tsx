@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer";
+import Carousal from "./components/carousal/carousal";
 // import style from "../../styles/css/index.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +24,9 @@ export default function RootLayout({
       <body className="body">
         <div>
           <Navbar />
+        </div>
+        <div>
+          <Carousal />
         </div>
         <div>{children}</div>
         <div>
