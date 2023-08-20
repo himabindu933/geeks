@@ -1,57 +1,77 @@
+.navbar_parent {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin-bottom: 100px;
+  // height: 100px;
+}
+
 .navbar {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    margin-inline: 25px;
-     align-items: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+  margin-inline: 25px;
+  align-items: center;
 }
 
 .navbar__pages {
-    display: flex;
-    gap: 30px;
-    font-size: 20px;
-
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
 }
 
 .navbar__buttons {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  .cart {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s ease-in-out;
+  }
 }
 
 .navbar__buttons button {
-    border: 1px solid;
-    padding-block: 5px;
-    padding-inline: 20px;
-    
+  border: 1px solid;
+  padding-block: 5px;
+  padding-inline: 20px;
 }
 
 .searchBar {
-    display: flex; 
-    align-items: 'center';
-    border: 3px solid #fff;
-    border-radius: 30px;
-    padding-inline: 10px;
+  display: flex;
+  align-items: "center";
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding-inline: 10px;
 }
 
 .searchBar input {
-    background-color: #000;
-    border-radius: 20px;
-    padding-top: 5px;
-    
-    padding-inline: 10px;
-    width: 300px;
+  background-color: #000;
+  border-radius: 20px;
+  padding-top: 5px;
+
+  padding-inline: 10px;
+  width: 300px;
 }
 
 .searchBar__icon {
-    padding-block: 5px;
-    cursor: pointer;
+  padding-block: 5px;
+  cursor: pointer;
 }
 
 .nav-bar-item:hover {
-  color: blueviolet;
+  // color: blueviolet;
+  color: orangered;
 }
 
 /* Dropdown CSS */
@@ -93,7 +113,8 @@
 
 /* Change the color of dropdown button on hover */
 .dropdown:hover .dropbtn {
-  color: blueviolet;
+  // color: blueviolet;
+  color: orangered;
 }
 
 /* Styles for submenu button and content */
@@ -126,4 +147,10 @@
 
 .submenu-content a:hover {
   background-color: #f1f1f1;
+  color: orangered !important;
+}
+
+.Navbar_logo {
+  width: 156px;
+  height: 49px;
 }

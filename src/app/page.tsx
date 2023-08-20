@@ -42,6 +42,7 @@ import "slick-carousel";
 import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
+import Carousal from "./components/carousal/carousal";
 
 function Home() {
   // const arr = [
@@ -224,9 +225,10 @@ function Home() {
 
   return (
     <>
+      <Carousal />
       <div className="course_tabs">
         <div className="inner_container">
-          <h2 data-aos="zoom-in">COURSES & CERTIFICATES</h2>
+          <h2 className="scroll-animation">COURSES & CERTIFICATES</h2>
           <div className="underline"></div>
           <p className="text-center mb-[60px]">
             Cinematic courses and certificate programs taught by the world’s
@@ -263,12 +265,16 @@ function Home() {
                           <div className="card_text">
                             <div
                               className="mentor_name"
-                              style={{ fontStyle: "italic", fontSize: 13 }}
+                              style={{
+                                fontStyle: "italic",
+                                fontSize: 13,
+                                fontWeight: 500,
+                              }}
                             >
                               <p>Lisa Johnes-Ex Discovery</p>
                               <p>Online</p>
                             </div>
-                            <h5 style={{ fontSize: 13 }}>
+                            <h5 style={{ fontSize: 15 }}>
                               Basic to photography
                             </h5>
                             <div className="underline"></div>

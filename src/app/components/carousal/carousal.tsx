@@ -20,27 +20,29 @@ const Carousal: React.FC = () => {
   };
 
   return (
-    <Carousel
-      showArrows={true}
-      onChange={onChange}
-      onClickItem={onClickItem}
-      onClickThumb={onClickThumb}
-      selectedItem={currentSlide}
-      showStatus={false}
-    >
-      <div>
-        <img src="slide1.jpeg" alt="Slide 1" />
-        {/* <p className="legend">Legend 1</p> */}
-      </div>
-      <div>
-        <img src="slide2.jpeg" alt="Slide 2" />
-        {/* <p className="legend">Legend 2</p> */}
-      </div>
-      <div>
-        <img src="slide3.jpeg" alt="Slide 3" />
-        {/* <p className="legend">Legend 3</p> */}
-      </div>
-    </Carousel>
+    <div style={{ backgroundColor: "#000" }}>
+      <Carousel
+        showArrows={true}
+        onChange={onChange}
+        onClickItem={onClickItem}
+        onClickThumb={onClickThumb}
+        selectedItem={currentSlide}
+        showStatus={false}
+      >
+        <div>
+          <img src="slide1.jpeg" alt="Slide 1" />
+          {/* <p className="legend">Legend 1</p> */}
+        </div>
+        <div>
+          <img src="slide2.jpeg" alt="Slide 2" />
+          {/* <p className="legend">Legend 2</p> */}
+        </div>
+        <div>
+          <img src="slide3.jpeg" alt="Slide 3" />
+          {/* <p className="legend">Legend 3</p> */}
+        </div>
+      </Carousel>
+    </div>
   );
 };
 

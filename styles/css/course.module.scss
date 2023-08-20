@@ -2,12 +2,14 @@
 
 .individual_course {
   background-color: $body-bg-color;
-  padding: 70px 0;
+  padding: 130px 0 70px 0px;
   .breadcrump {
     margin-bottom: 30px;
     p {
       span {
-        border: 2px solid #fff;
+        // border: 2px solid #fff;
+        font-size: 20px;
+        color: orangered;
         border-radius: 15px;
         padding: 0px 4px;
       }
@@ -49,7 +51,7 @@
 .buynowbtn {
   &:hover {
     color: orangered !important;
-    transform: 0.5s ease-in-out !important;
+    transition: 0.5s ease-in-out !important;
     transform: scale(1.1);
   }
 }
