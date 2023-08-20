@@ -1,7 +1,7 @@
 @import "./index.module.scss";
 
 .course_tabs {
-  padding: 90px 0;
+  padding: 70px 0;
   background-color: $body-bg-color;
   color: $color-primay;
   font-size: $p-font;
@@ -18,6 +18,9 @@
     .tabpanel {
       .slick-slide {
         margin: 0px 15px;
+        // &:hover {
+        //   transform: scale(1.1);
+        // }
       }
       margin-top: 40px;
       .card_flex {
@@ -70,11 +73,12 @@
                 border: 2px solid #000;
                 padding: 5px 10px;
                 span {
-                  padding: 0px 8px;
+                  padding: 0px 4px;
                   border-radius: 20px;
                   margin-left: 5px;
                   border: 2px solid black;
                   font-size: 20;
+                  font-weight: bold;
                 }
               }
               text-align: center;
@@ -89,7 +93,7 @@
                 background-color: #000;
                 span {
                   border: 2px solid #fff;
-                  padding: 0px 8px;
+                  padding: 0px 4px;
                   border-radius: 20px;
                 }
               }
@@ -111,7 +115,8 @@
         border: 2px solid #fff;
         padding: 5px 10px;
         span {
-          padding: 0px 8px;
+          padding: 0px 4px;
+          font-weight: bold;
           border-radius: 20px;
           margin-left: 5px;
           border: 2px solid #fff;
@@ -161,25 +166,33 @@
 }
 
 .comapanies {
-  padding: 30px 0;
+  padding: 70px 0;
+  margin-top: 10px;
+  background-color: $body-bg-color;
+  .underline {
+    margin: 0px auto !important;
+  }
   .slideshow-container {
+    // border: 1px solid #fff;
     .companies_flex {
       display: flex !important;
       justify-content: space-between;
-      margin-bottom: 70px;
+      // margin-bottom: 70px;
       .companies_flex_left {
         width: 50%;
         display: flex;
         align-items: center;
-        padding-left: 40px;
+        padding-left: 150px;
+        font-family: "Roboto";
       }
       .companies_flex_right {
         width: 50%;
         .company_img {
-          width: 100%;
-          height: 300px;
-          border-radius: 9px;
-          padding-right: 20px;
+          width: 100% !important;
+          height: 500px;
+          // border: 1px solid #fff;
+          // border-radius: 9px;
+          // padding-right: 20px;
         }
       }
     }
@@ -187,7 +200,9 @@
 }
 
 .testimonials {
-  padding: 90px 0;
+  padding: 70px 0;
+  background-color: #000;
+  margin-top: 10px;
   // border-bottom: 1px solid #fff;
   .underline {
     width: 23%;
@@ -227,10 +242,15 @@
         margin-bottom: 10px;
         background-color: gray;
         color: #fff;
-        padding: 20px;
-        border-radius: 47px;
+        width: 77px;
+        height: 77px;
+        border-radius: 90px;
+        border: "2px solid gray";
       }
     }
+  }
+  .content {
+    // font-family: Helvetica;
   }
 }
 
@@ -268,7 +288,7 @@
 }
 
 .ceo_name {
-  color: #eee;
+  color: orangered;
   font-weight: bold;
   margin-top: 30px;
 }
@@ -279,54 +299,104 @@
     display: inline-flex;
     column-gap: 70px;
     justify-content: center;
-    margin-top: 50px;
   }
 }
 
-.geeks_for {
-  padding-top: 120px;
-  display: flex;
-  justify-content: space-between;
-  .geeks_for_left {
-    width: 48%;
+@keyframes identifier {
+  0% {
+    margin-top: -30px;
+  }
+  100% {
+    margin-bottom: -30px;
+  }
+}
+
+.geeks_for_parent {
+  padding: 70px 0;
+  margin-top: 10px;
+  background-color: #000;
+  .geeks_for {
     display: flex;
-    align-items: center;
-    .inner_geeks_left {
-      .inner_companies_flex {
-        display: flex;
-        column-gap: 20px;
-        margin-top: 40px;
-        div {
-          color: #000;
-          background-color: #fff;
-          border-radius: 50px;
-          padding: 20px;
-          font-size: 30px;
-          font-weight: bold;
+    justify-content: space-between;
+    .geeks_for_left {
+      width: 48%;
+      display: flex;
+      align-items: center;
+      .inner_geeks_left {
+        .inner_companies_flex {
+          display: flex;
+          column-gap: 20px;
+          margin-top: 40px;
+          .icon {
+            width: 70px;
+            height: 70px;
+            // text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            background-color: #fff;
+            border-radius: 90px;
+            padding: 15px;
+            font-size: 30px;
+            font-weight: bold;
+          }
+          .icon1:hover,
+          .icon2:hover,
+          .icon3:hover,
+          .icon4:hover,
+          .icon5:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
-  }
-  .geeks_for_right {
-    width: 48%;
-    .company_img {
-      width: 100%;
+    .geeks_for_right {
+      width: 48%;
+      .company_img {
+        width: 100%;
+        height: 500px;
+        // -webkit-animation: mover 1s infinite alternate;
+        animation: identifier 1s infinite alternate;
+      }
     }
   }
-}
 
-.collaborations_parent {
-  padding: 90px 0;
-  .collaborations {
-    margin-top: 75px;
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
+  .collaborations_parent {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    .collaborations {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      column-gap: 50px;
+      .img1 {
+        width: 190px !important;
+        height: 74px !important;
+        margin-top: 15px;
+      }
+      .img2 {
+        width: 110px !important;
+        height: 94px !important;
+      }
+      .img3 {
+        width: 130px !important;
+        height: 91px !important;
+      }
+      .img1:hover,
+      .img2:hover,
+      .img3:hover {
+        // -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+        transform: scale(1.1);
+      }
+    }
   }
 }
 
 .team {
-  padding: 90px 0;
+  padding: 70px 0;
+  background-color: #000;
+  margin-top: 10px;
   .underline {
     width: 13%;
     margin-bottom: 30px;
@@ -341,6 +411,7 @@
       flex-wrap: wrap !important;
       button {
         margin-bottom: 15px;
+        font-size: 16px;
       }
       .active,
       .inactive {

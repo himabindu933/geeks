@@ -1,8 +1,9 @@
 "use client";
 import { FaLocationDot } from "react-icons/fa6";
-import { BiMobileAlt } from "react-icons/bi";
+import { BiMobileAlt, BiLogoYoutube } from "react-icons/bi";
 import { SlEnvolope } from "react-icons/sl";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
+import { AiFillMail } from "react-icons/ai";
 import Imgtag from "next/image";
 import logo from "../images/geek_logo.png";
 
@@ -17,7 +18,13 @@ export default function Footer() {
           </h2> */}
           {/* <h3 className="text-center ceo_name">Syed Shakeer, CEO</h3> */}
           {/* <h3 className="mt-[60px]">THE GEEK HALL</h3> */}
-          <Imgtag alt="logo" src={logo} width={150} height={150} />
+          <Imgtag
+            alt="logo"
+            src={logo}
+            width={150}
+            height={150}
+            style={{ marginLeft: "-10px" }}
+          />
           <div className="address">
             {/* <div className="address_col">
                <h5>Reservations Office</h5> 
@@ -67,16 +74,22 @@ export default function Footer() {
               <p>Connect with us</p>
               <div className="socila_icons">
                 <div>
-                  <BsFacebook />
+                  <BsFacebook className="sicon1" />
                 </div>
                 <div>
-                  <BsTwitter />
+                  <BsTwitter className="sicon2" />
                 </div>
                 <div>
-                  <BsInstagram />
+                  <BsInstagram className="sicon3" />
+                </div>
+                <div>
+                  <BiLogoYoutube className="sicon3" />
+                </div>
+                <div>
+                  <AiFillMail className="sicon3" />
                 </div>
               </div>
-              <button className="footer_btn">Tag us in your photos</button>
+              {/* <button className="footer_btn">Tag us in your photos</button> */}
             </div>
             <div className="address_col sign_up">
               <p>Ready to get started?</p>
