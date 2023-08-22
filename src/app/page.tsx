@@ -33,16 +33,16 @@ import img5 from "./images/updates.png";
 import img6 from "./images/Communitybuilding.png";
 import men2 from "./images/men2.jpg";
 
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import $ from "jquery";
+// import "slick-carousel";
+
+import Carousal from "./components/carousal/carousal";
+
+import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import $ from "jquery";
-import "slick-carousel";
-
-// import Swiper JS
-import Swiper from "swiper";
-// import Swiper styles
-import "swiper/css";
-import Carousal from "./components/carousal/carousal";
 
 function Home() {
   // const arr = [
@@ -146,25 +146,65 @@ function Home() {
     setValue(parseInt(e.target.value));
   };
 
-  $(document).ready(function () {
-    $(".card_flex").slick({
-      slidesToShow: 4,
-      dots: false,
-      centerMode: false,
-      cssEase: "ease",
-      slidesToScroll: 1,
-    });
-  });
+  // $(document).ready(function () {
+  // $(".card_flex").slick({
+  //   slidesToShow: 4,
+  //   dots: false,
+  //   centerMode: false,
+  //   cssEase: "ease",
+  //   slidesToScroll: 1,
+  // });
+  // $(".slideshow-container").slick({
+  //   slidesToShow: 1,
+  //   dots: false,
+  //   centerMode: false,
+  //   cssEase: "ease",
+  //   slidesToScroll: 1,
+  // });
+  // $(".testimonials_container").slick({
+  //   slidesToShow: 4,
+  //   dots: false,
+  //   centerMode: false,
+  //   cssEase: "ease",
+  //   slidesToScroll: 1,
+  // });
+  // });
 
-  $(document).ready(function () {
-    $(".slideshow-container").slick({
-      slidesToShow: 1,
-      dots: false,
-      centerMode: false,
-      cssEase: "ease",
-      slidesToScroll: 1,
-    });
-  });
+  const cards_flex_carousel: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    centerMode: true,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    adaptiveHeight: true,
+    swipeToSlide: true,
+  };
+
+  const students_flex_carousel: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    centerMode: true,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    adaptiveHeight: true,
+    swipeToSlide: true,
+  };
+
+  const testimonials_flex_carousel: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    centerMode: true,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    adaptiveHeight: true,
+    swipeToSlide: true,
+  };
 
   interface testimonials {
     id: number;
@@ -179,16 +219,6 @@ function Home() {
     { id: 3, name: "Sanjay", para: "Lorem ipsum dollar" },
     { id: 4, name: "Rahul", para: "Lorem ipsum dollar" },
   ];
-
-  $(document).ready(function () {
-    $(".testimonials_container").slick({
-      slidesToShow: 4,
-      dots: false,
-      centerMode: false,
-      cssEase: "ease",
-      slidesToScroll: 1,
-    });
-  });
 
   const geeks: cards_flex[] = [
     {
@@ -254,45 +284,47 @@ function Home() {
                 console.log(value, "inval");
                 return (
                   <div key={item.id} className="card_flex">
-                    {item.cards.map((child, childIndex) => {
-                      return (
-                        <div className="card" key={index}>
-                          <ImgTag
-                            src={child.image}
-                            alt="image"
-                            className="card_img"
-                          />
-                          <div className="card_text">
-                            <div
-                              className="mentor_name"
-                              style={{
-                                fontStyle: "italic",
-                                fontSize: 13,
-                                fontWeight: 500,
-                              }}
-                            >
-                              <p>Lisa Johnes-Ex Discovery</p>
-                              <p>Online</p>
-                            </div>
-                            <h5 style={{ fontSize: 15 }}>
-                              Basic to photography
-                            </h5>
-                            <div className="underline"></div>
-                            <p className="mb-[15px]">
-                              In this course we would dive you from basic to
-                              advance learning.
-                            </p>
-                            <div className="button">
-                              <Link href="/course">
-                                <button>
-                                  Join Now <span>&#x3e;</span>
-                                </button>
-                              </Link>
+                    <Slider {...cards_flex_carousel} className="slider">
+                      {item.cards.map((child, childIndex) => {
+                        return (
+                          <div className="card" key={index}>
+                            <ImgTag
+                              src={child.image}
+                              alt="image"
+                              className="card_img"
+                            />
+                            <div className="card_text">
+                              <div
+                                className="mentor_name"
+                                style={{
+                                  fontStyle: "italic",
+                                  fontSize: 13,
+                                  fontWeight: 500,
+                                }}
+                              >
+                                <p>Lisa Johnes-Ex Discovery</p>
+                                <p>Online</p>
+                              </div>
+                              <h5 style={{ fontSize: 15 }}>
+                                Basic to photography
+                              </h5>
+                              <div className="underline"></div>
+                              <p className="mb-[15px]">
+                                In this course we would dive you from basic to
+                                advance learning.
+                              </p>
+                              <div className="button">
+                                <Link href="/course">
+                                  <button>
+                                    Join Now <span>&#x3e;</span>
+                                  </button>
+                                </Link>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      );
-                    })}
+                        );
+                      })}
+                    </Slider>
                   </div>
                 );
               }
@@ -312,26 +344,28 @@ function Home() {
           <div className="underline"></div>
 
           <div className="slideshow-container">
-            {geeks.map((item, index) => {
-              return (
-                <div className="companies_flex" key={index}>
-                  <div className="companies_flex_left">
-                    <div>
-                      <h3 style={{ fontSize: 30 }}>{item.name}</h3>
+            <Slider {...students_flex_carousel}>
+              {geeks.map((item, index) => {
+                return (
+                  <div className="companies_flex" key={index}>
+                    <div className="companies_flex_left">
+                      <div>
+                        <h3 style={{ fontSize: 30 }}>{item.name}</h3>
+                      </div>
+                    </div>
+                    <div className="companies_flex_right">
+                      <ImgTag
+                        src={item.image}
+                        alt="image1"
+                        // width={100}
+                        // height={100}
+                        className="company_img"
+                      />
                     </div>
                   </div>
-                  <div className="companies_flex_right">
-                    <ImgTag
-                      src={item.image}
-                      alt="image1"
-                      // width={100}
-                      // height={100}
-                      className="company_img"
-                    />
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </Slider>
           </div>
         </div>
         <div className="inner_container cater">
@@ -462,20 +496,22 @@ function Home() {
         </h2>
         <div className="underline"></div>
         <div className="inner_container testimonials_container">
-          {studentsFeedback.map((item, index) => {
-            return (
-              <div className="card" key={index}>
-                <div className="card_bg">
-                  <div style={{ display: "flex", columnGap: 10 }}>
-                    {/* <BsFillPersonFill className="icon" /> */}
-                    <ImgTag src={men2} alt="students" className="icon" />
-                    <h5 style={{ marginTop: 30 }}>{item.name}</h5>
+          <Slider {...testimonials_flex_carousel}>
+            {studentsFeedback.map((item, index) => {
+              return (
+                <div className="card" key={index}>
+                  <div className="card_bg">
+                    <div style={{ display: "flex", columnGap: 10 }}>
+                      {/* <BsFillPersonFill className="icon" /> */}
+                      <ImgTag src={men2} alt="students" className="icon" />
+                      <h5 style={{ marginTop: 30 }}>{item.name}</h5>
+                    </div>
+                    <p>{item.para}</p>
                   </div>
-                  <p>{item.para}</p>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </Slider>
         </div>
 
         <h2
