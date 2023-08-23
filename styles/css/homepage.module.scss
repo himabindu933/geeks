@@ -33,6 +33,7 @@
       margin-top: 40px;
       .slider {
         .slick-slide {
+          overflow: hidden;
           margin: 0px 15px;
           border: 2px solid gray;
           color: #000 !important;
@@ -67,7 +68,7 @@
               button {
                 border-radius: 30px;
                 border: 2px solid #000;
-                padding: 5px 10px;
+                padding: 5px 18px;
                 span {
                   padding: 0px 0px;
                   border-radius: 20px;
@@ -79,14 +80,15 @@
               }
               text-align: center;
             }
-            .button:hover {
-              color: #fff;
-              button {
+            .button {
+              // color: #fff;
+              button:hover {
                 transition: 0.5s ease-in;
                 border-radius: 30px;
                 border: 2px solid #fff;
-                padding: 5px 10px;
+                // padding: 5px 10px;
                 background-color: #000;
+                color: #fff;
                 span {
                   // border: 2px solid #fff;
                   padding: 0px 0px;
@@ -102,8 +104,12 @@
             border-top-right-radius: 5px;
           }
           &:hover {
-            transform: translateY(-10px);
             box-shadow: 0px 10px 20px gray;
+            .card_img {
+              // transform: translateY(-10px);
+              transform: scale(1.1);
+              transition: 0.5s ease-out;
+            }
           }
         }
       }
@@ -398,12 +404,6 @@
       .img3 {
         width: 130px !important;
         height: 91px !important;
-      }
-      .img1:hover,
-      .img2:hover,
-      .img3:hover {
-        // -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-        transform: scale(1.1);
       }
     }
   }
